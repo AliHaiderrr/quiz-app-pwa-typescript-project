@@ -2,6 +2,7 @@ import React,{useEffect, useState} from 'react';
 import {Service}from "./Services/Service";
 import { quiztype } from "./QuizType/quiz_type";
 import  QuestionCard  from "./QuestionCard/Question_Card";
+import {  Allnotification} from "./client/client";
 import './App.css';
 
 
@@ -20,7 +21,8 @@ async function FatchData() {
  const question: quiztype[]= await Service(10, "easy");
 
  setQuiz(question)
- 
+
+ Allnotification()
 }
 FatchData();
    

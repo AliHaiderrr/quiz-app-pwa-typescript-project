@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 
-import { quiztype,Questiontype } from "./../QuizType/quiz_type";
+import { quiztype,Questiontype } from "../QuizType/quiz_type";
 
 let shafalArray =(array: any[] )=>
   [...array].sort(()=> Math.random() - 0.5)  
